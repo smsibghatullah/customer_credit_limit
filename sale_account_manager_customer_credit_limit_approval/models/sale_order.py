@@ -41,7 +41,7 @@ class SaleOrder(models.Model):
                 elif order.state == 'done':
                     order.rental_status = 'returned'
                 elif order.state == 'cancel':
-                    order.rental_status = 'cancelled'
+                    order.rental_status = 'cancel'
                 else:
                     order.rental_status = 'draft'
 
